@@ -1,13 +1,13 @@
 {
   "name": "tasks-ts",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx nodemon",
     "build": "rimraf ./dist && npx tsc",
-    "start": "npm run build && node dist/index.js"
+    "start:task1": "npm run build && node dist/task1.js",
+    "start:task2": "npm run build && node dist/task2.js",
+    "start:task3": "npm run build && node dist/task3.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,11 @@
   },
   "dependencies": {
     "@types/node": "^20.2.6",
+    "@types/node-fetch": "^2.6.4",
+    "@types/underscore": "^1.11.5",
+    "node-fetch": "^2.6.11",
     "nodemon": "^2.0.22",
-    "rimraf": "^5.0.1"
+    "rimraf": "^5.0.1",
+    "underscore": "^1.13.6"
   }
 }
